@@ -9,7 +9,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                gradlew build
+                bat''' cd C:\ProgramData\Jenkins\.jenkins\workspace\fere '''
+                bat '''call gradlew.bat'''
             }
         }
          stage('Test') {
