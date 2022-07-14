@@ -9,7 +9,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                 cd C:/ProgramData/Jenkins/.jenkins/workspace/fere
                 call gradlew.bat
             }
         }
